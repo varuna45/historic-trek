@@ -1,0 +1,55 @@
+.landing-container {
+  height: 100vh;
+  width: 100%;
+  background: url('../../assets/download.jpg')
+              no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn {
+  width: 250px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup {
+  background-color: white;
+  color: #333;
+}
+
+.login {
+  background-color: #3CB371; /* green */
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,79 @@
+:root{
+  --rail:#7fb0bf;
+  --bg:#ffffff;
+  --text:#000000;
+  --shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+body{
+  font-family: "Times New Roman", Georgia, serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.8;
+  font-size:20px; /* bigger like screenshot */
+}
+
+/* Right vertical bar */
+.brand-rail{
+  position:fixed;
+  right:0; top:0;
+  width:80px; height:100vh;
+  background:var(--rail);
+  color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing:.25em;
+  font-weight:bold;
+  text-transform:uppercase;
+  box-shadow:-2px 0 0 rgba(255,255,255,.25) inset;
+  z-index:10;
+}
+
+/* Container */
+.story{
+  max-width:1100px;
+  margin:0 auto;
+  padding:80px 120px 80px 40px; /* more spacing */
+}
+
+/* Blocks */
+.story-block{
+  display:grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap:48px;
+  align-items:center;
+  margin:100px 0; /* more space between sections */
+}
+
+.story-block .text p{
+  font-size:20px;
+  color:#111;
+  text-align:justify;
+}
+
+.story-block .image img{
+  width:100%; height:500px;
+  object-fit:cover;
+  border-radius:10px;
+  box-shadow:var(--shadow);
+}
+
+/* Alternate layout */
+.story-block.reverse .text{ order:2; }
+.story-block.reverse .image{ order:1; }
+
+/* Responsive */
+@media (max-width: 900px){
+  .brand-rail{ display:none; }
+  .story{ padding:24px; }
+  .story-block{
+    grid-template-columns:1fr;
+    gap:24px;
+    margin:60px 0;
+  }
+  .story-block .image img{ height:320px; }
+  .story-block.reverse .text{ order:1; }
+}

@@ -1,0 +1,117 @@
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../../assets/Download\ autumn\ forest\ in\ the\ mountains\ Created\ with\ AI\ for\ free.jpg')
+    no-repeat center center/cover;
+}
+
+/* Transparent dark box */
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0, 255, 100, 0.35);
+}
+
+/* Title */
+.signin-box h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+/* Input fields */
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #4caf50;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-box input::placeholder {
+  color: #bbb;
+}
+
+/* Options (remember + forgot) */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.options label {
+  color: #ccc;
+}
+
+.options a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background: #4caf50;
+  color: white;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+/* Register link */
+.signup {
+  margin-top: 20px;
+  text-align: center;
+  color: #ccc;
+}
+
+.signup a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
