@@ -1,0 +1,22 @@
+<div class="about-container">
+  <div class="about-card">
+    <h1 class="title">About Us</h1>
+    <p class="subtitle">
+      Welcome to our Historic Trek Site! <br>
+      We are passionate explorers dedicated to uncovering the stories hidden in ancient forts, monuments, and trekking trails.
+    </p>
+
+    <div class="author-section">
+      <h2 class="author-title">Meet the Team</h2>
+      <div class="author-grid">
+        <div class="author-card" *ngFor="let author of authors">
+          <div class="author-avatar">
+            <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG-Picture.png" alt="{{author.name}}" />
+          </div>
+          <h3>{{author.name}}</h3>
+          <p class="role">Co-Founder & Explorer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

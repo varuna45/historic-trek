@@ -6,6 +6,7 @@ import { RegisterComponent } from './register/register.component';
 import { ServicesComponent } from './services/services.component';
 import { OptionComponent } from './option/option.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
 
@@ -15,5 +16,6 @@ export const routes: Routes = [
  {component:RegisterComponent,path:"register"},
  {component:ServicesComponent,path:"services"},
  {component:OptionComponent,path:"option"},
- {component:ContactComponent,path:"contact"}
+ {component:ContactComponent,path:"contact"},
+ {component:AboutComponent,path:"about"}
 ];
