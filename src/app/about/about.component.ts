@@ -10,9 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
  authors = [
-    { name: 'Varuna Kshirsagar' },
-    { name: 'Purvi Mandlik' },
-    { name: 'Komal Pacharne' },
-    { name: 'Siddhi Nagare' }
+    { name: 'Varuna Kshirsagar' ,role:"ab"},
+    { name: 'Purvi Mandlik',role:"cd" },
+    { name: 'Siddhi Nagare',role:"ef" },
+    { name:'Komal Pacharne',role:"gh"},
+    { name:'Sankalp Karkhele',role:"ij"}
   ];
 }

@@ -21,9 +21,7 @@
         <li class="nav-item">
           <a class="nav-link active text-warning" aria-current="page" routerLink="/">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" routerLink="/about">About</a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link text-light" routerLink="/services">services</a>
         </li>
@@ -31,29 +29,14 @@
           <a class="nav-link text-light" routerLink="/contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Treks</a>
+          <a class="nav-link text-light" routerLink="/billing">Billing</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="#" role="button" 
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Explore
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Forts</a></li>
-            <li><a class="dropdown-item" href="#">Caves</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">More Adventures</a></li>
-          </ul>
+                <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/about">About</a>
         </li>
       </ul>
 
-      <!-- Search Icon -->
-      <form class="d-flex ms-lg-3 mt-2 mt-lg-0">
-        <input class="form-control me-2" type="search" placeholder="Search fort..." aria-label="Search">
-        <button class="btn btn-warning" type="submit">
-          <i class="bi bi-search"></i>
-        </button>
-      </form>
+ 
 
       <!-- Login Button at End -->
       <a routerLink="/login" class="btn btn-outline-light ms-3 d-flex align-items-center">
@@ -62,3 +45,4 @@
     </div>
   </div>
 </nav>
+

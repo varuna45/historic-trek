@@ -7,6 +7,8 @@ import { ServicesComponent } from './services/services.component';
 import { OptionComponent } from './option/option.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { BillingComponent } from './billing/billing.component';
+import { GuidebuttonComponent } from './guidebutton/guidebutton.component';
 
 export const routes: Routes = [
 
@@ -17,5 +19,7 @@ export const routes: Routes = [
  {component:ServicesComponent,path:"services"},
  {component:OptionComponent,path:"option"},
  {component:ContactComponent,path:"contact"},
- {component:AboutComponent,path:"about"}
+ {component:AboutComponent,path:"about"},
+ {component:BillingComponent,path:"billing"},
+ {component:GuidebuttonComponent,path:"guide"}
 ];

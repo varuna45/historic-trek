@@ -10,8 +10,10 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
   imgpath="../../";
   imgName="";
+    
+  
 
-//  isVal=true;
+
 
   
 

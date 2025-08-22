@@ -1,10 +1,28 @@
 <!-- Fort Story Page (Dark + Gold Theme) -->
 <div class="container-fluid bg-dark text-light py-5">
+  
+  <!-- Dropdown Navigation -->
+  <div class="text-center mb-4">
+    <label for="fort-nav" class="me-2 text-warning fw-bold">🏰 Jump to Fort:</label>
+    <select id="fort-nav" class="p-2 rounded bg-secondary text-light border border-warning"
+            onchange="if(this.value) window.location.hash=this.value;">
+      <option value="">-- Select Fort --</option>
+      <option value="#rajgad">Rajgad Fort</option>
+      <option value="#vijaydurg">Vijaydurg Fort</option>
+      <option value="#sindhudurg">Sindhudurg Fort</option>
+      <option value="#sinhgad">Sinhgad Fort</option>
+      <option value="#shivneri">Shivneri Fort</option>
+            <option value="#harihar">Harihar Fort</option>
+      <option value="#harishchandragad">Harishchandragad Fort</option>
+
+    </select>
+  </div>
+
   <div class="row justify-content-center">
     <main class="col-md-11">
 
       <!-- Block 1 -->
-      <article class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center">
+      <article id="rajgad" class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center">
         <div class="col-md-6 mb-3 mb-md-0">
           <h2 class="text-warning"><b>Rajgad Fort</b></h2>
           <p>
@@ -30,29 +48,32 @@
           <img src="../../assets/Rajgad Fort.jpeg" alt="Rajgad Fort" class="img-fluid rounded shadow-lg border border-3 border-warning">
         </div>
       </article>
+      <!-- <div>
+        <ng-template>
+          <h2>Rajgad</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.2003828502043!2d73.67963787500634!3d18.24663338279457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc28fa3eb07c019%3A0xe2f323ba03aacd31!2sRajgad%20Fort!5e0!3m2!1sen!2sin!4v1755804444183!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ng-template>
+      </div> -->
 
       <!-- Block 2 -->
-      <article class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center flex-row-reverse">
+      <article id="vijaydurg" class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center flex-row-reverse">
         <div class="col-md-6 mb-3 mb-md-0">
           <h2 class="text-warning"><b>Vijaydurg Fort</b></h2>
-
-           
-      <p>Vijaydurg, the oldest fort on the Sindhudurg coast, was constructed during Raja Bhoja II’s reign and later restructured by Shivaji Maharaj.</p>
-           <div class="bg-dark p-3 rounded shadow-sm mt-3">
+          <p>Vijaydurg, the oldest fort on the Sindhudurg coast, was constructed during Raja Bhoja II’s reign and later restructured by Shivaji Maharaj.</p>
+          <div class="bg-dark p-3 rounded shadow-sm mt-3">
             <p><strong>🏗 Built:</strong> 1193</p>
             <p><strong>📍 Address:</strong> H86M+F5H,Vijaydurg, Maharashtra 416806</p>
             <p><strong>📞 Phone:</strong> <a href="tel:09870106259" class="text-warning">0987018 76778</a></p>
             <p><strong>🕒 Hours:</strong> <span class="text-success">Open</span>, closes 6:30 pm</p>
           </div>
-          </div>
-        
+        </div>
         <div class="col-md-6 text-center">
           <img src="../../assets/download (2).jpeg" alt="Vijaydurg Fort" class="img-fluid rounded shadow-lg border border-3 border-warning">
         </div>
       </article>
 
       <!-- Block 3 -->
-      <article class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center">
+      <article id="sindhudurg" class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center">
         <div class="col-md-6 mb-3 mb-md-0">
           <h2 class="text-warning"><b>Sindhudurg Fort</b></h2>
           <p>
@@ -72,26 +93,72 @@
         </div>
       </article>
 
-            <article class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center flex-row-reverse">
+      <!-- Block 4 -->
+      <article id="sinhgad" class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center flex-row-reverse">
         <div class="col-md-6 mb-3 mb-md-0">
           <h2 class="text-warning"><b>Sinhgad Fort</b></h2>
-          <p>Sinhagad (Lion's Fort) is an ancient hill fortress located at around 28 km southwest of the city of Pune, India. Previously known as Kondhana, the fort had been the site of many battles, most notably the Battle of Sinhagad in 1670.[1]</p>
-
-<p>The fort is a popular weekend destination for the residents of Pune. A road directly leads up to the summit of the fort. Trekking enthusiasts can get access to the summit from the base of the fort. The trek involves a one-way walk of 2.7 km (1.6 miles) over which the walker gains about 600 m (1950 feet) in elevation.[2] Shared taxi services to the base as well as the summit are also available</p>
-           
-
-           <div class="bg-dark p-3 rounded shadow-sm mt-3">
+          <p>Sinhagad (Lion's Fort) is an ancient hill fortress located at around 28 km southwest of Pune. Previously known as Kondhana, the fort had been the site of many battles, most notably the Battle of Sinhagad in 1670.</p>
+          <p>The fort is a popular weekend destination for the residents of Pune. A road directly leads up to the summit of the fort. Trekking enthusiasts can get access to the summit from the base of the fort.</p>
+          <div class="bg-dark p-3 rounded shadow-sm mt-3">
             <p><strong>🏗 Built:</strong> 1193</p>
-            <p><strong>📍 Address:</strong> H86M+F5H, Sindhudurg, Maharashtra 416806</p>
+            <p><strong>📍 Address:</strong> H86M+F5H, Pune, Maharashtra 416806</p>
             <p><strong>📞 Phone:</strong> <a href="tel:09870106259" class="text-warning">098701 06259</a></p>
             <p><strong>🕒 Hours:</strong> <span class="text-success">Open</span>, closes 6:30 pm</p>
           </div>
-          </div>
-        
+        </div>
         <div class="col-md-6 text-center">
           <img src="../../assets/sihngad fort.jpg" alt="Sinhgad Fort" class="img-fluid rounded shadow-lg border border-3 border-warning">
         </div>
       </article>
+
+            <article id="Shiveri" class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center flex-row-reverse">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h2 class="text-warning"><b>Shivneri Fort</b></h2>
+          <p>Shivneri Fort, the birthplace of Chhatrapati Shivaji Maharaj, is a historic fort located near Junnar in the Pune district of Maharashtra.</p>
+          <div class="bg-dark p-3 rounded shadow-sm mt-3">
+            <p><strong>🏗 Built:</strong>1640</p>
+            <p><strong>📍 Address:</strong> Shivneri Foot Path, Near Junnar Town, Pune, Maharashtra 410502 · 81 km</p>
+            <p><strong>📞 Phone:</strong> <a href="tel:09870106259" class="text-warning">0987018 </a></p>
+            <p><strong>🕒 Hours:</strong> <span class="text-success">Open</span>, closes 8:00 pm</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../../assets/Shivneri Fort, Maharastra.jpg" alt="Shivneri Fort" class="img-fluid rounded shadow-lg border border-3 border-warning">
+        </div>
+      </article>
+
+                  <article id="harihar" class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center flex-row-reverse">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h2 class="text-warning"><b>Harihar Fort</b></h2>
+          <p>Harihar Fort is a hill fort located in the Nashik district of Maharashtra, India. It is known for its unique architecture and stunning views.</p>
+          <div class="bg-dark p-3 rounded shadow-sm mt-3">
+            <p><strong>🏗 Built:</strong>1636</p>
+            <p><strong>📍 Address:</strong> Harihar Fort, Near Trimbak, Nashik, Maharashtra 422212</p>
+            <p><strong>📞 Phone:</strong> <a href="tel:09870106259" class="text-warning">0987018 </a></p>
+            <p><strong>🕒 Hours:</strong> <span class="text-success">Open</span>, closes 8:00 pm</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../../assets/Harihar Fort🌿❤️.jpg" alt="Harihar Fort" class="img-fluid rounded shadow-lg border border-3 border-warning">
+        </div>
+      </article>
+
+                        <article id="harishchandraad" class="row story-block bg-secondary p-4 rounded shadow-lg mb-5 align-items-center flex-row-reverse">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h2 class="text-warning"><b>Harishchandragad Fort</b></h2>
+          <p>The fort is quite ancient. Remnants of Microlithic man have been discovered here. The various Puranas (ancient scriptures) like Matsyapurana, Agnipurana and Skandapurana include many references about Harishchandragad. Its origin is said to have been in the 6th century, during the rule of Kalachuri dynasty..</p>
+          <div class="bg-dark p-3 rounded shadow-sm mt-3">
+            <p><strong>🏗 Built:</strong>in 11th century</p>
+            <p><strong>📍 Address:</strong> Ahmednagar district of India.</p>
+            <p><strong>📞 Phone:</strong> <a href="tel:09870106259" class="text-warning">9890 </a></p>
+            <p><strong>🕒 Hours:</strong> <span class="text-success">Open</span>, closes 8:00 pm</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../../assets/Harishchandra Gad Temple⛰️🛕.jpg" alt="Harishchandragad Fort" class="img-fluid rounded shadow-lg border border-3 border-warning">
+        </div>
+      </article>
+
 
 
     </main>
@@ -109,4 +176,3 @@
     box-shadow: 0px 8px 20px rgba(255, 215, 0, 0.3);
   }
 </style>
-  
