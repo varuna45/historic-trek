@@ -1,0 +1,87 @@
+<!-- Guide Management Page -->
+<div class="container-fluid bg-dark text-light py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <h1 class="text-center text-warning mb-5">🧭 Guide Management</h1>
+      
+      <!-- Available Guides Section -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h3 class="text-success">✅ Available Guides</h3>
+          <div *ngIf="availableGuides.length === 0" class="alert alert-info">
+            No guides available at the moment.
+          </div>
+          <div *ngFor="let guide of availableGuides" class="card bg-secondary text-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title text-warning">{{guide.name}}</h5>
+              <p class="card-text">
+                <strong>Experience:</strong> {{guide.experience}} years<br>
+                <strong>Specialization:</strong> {{guide.specialization.join(', ')}}<br>
+                <strong>Rating:</strong> ⭐ {{guide.rating}}/5<br>
+                <strong>Phone:</strong> {{guide.phone}}<br>
+                <strong>Email:</strong> {{guide.email}}
+              </p>
+              <span class="badge bg-success">Available</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Assigned Guides Section -->
+        <div class="col-md-6 mb-4">
+          <h3 class="text-danger">📍 Assigned Guides</h3>
+          <div *ngIf="assignedGuides.length === 0" class="alert alert-info">
+            No guides are currently assigned.
+          </div>
+          <div *ngFor="let guide of assignedGuides" class="card bg-secondary text-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title text-warning">{{guide.name}}</h5>
+              <p class="card-text">
+                <strong>Experience:</strong> {{guide.experience}} years<br>
+                <strong>Specialization:</strong> {{guide.specialization.join(', ')}}<br>
+                <strong>Rating:</strong> ⭐ {{guide.rating}}/5<br>
+                <strong>Phone:</strong> {{guide.phone}}<br>
+                <strong>Email:</strong> {{guide.email}}<br>
+                <strong>Assigned to:</strong> <span class="text-info">{{getFortName(guide.assignedFort!)}}</span>
+              </p>
+              <span class="badge bg-danger me-2">Assigned</span>
+              <button class="btn btn-sm btn-outline-warning" (click)="unassignGuide(guide.id)">
+                Unassign
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Guide Statistics -->
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <div class="card bg-secondary text-light">
+            <div class="card-header">
+              <h4 class="text-warning">📊 Guide Statistics</h4>
+            </div>
+            <div class="card-body">
+              <div class="row text-center">
+                <div class="col-md-3">
+                  <h3 class="text-success">{{guides.length}}</h3>
+                  <p>Total Guides</p>
+                </div>
+                <div class="col-md-3">
+                  <h3 class="text-info">{{availableGuides.length}}</h3>
+                  <p>Available</p>
+                </div>
+                <div class="col-md-3">
+                  <h3 class="text-danger">{{assignedGuides.length}}</h3>
+                  <p>Assigned</p>
+                </div>
+                <div class="col-md-3">
+                  <h3 class="text-warning">{{getAverageRating()}}</h3>
+                  <p>Avg Rating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
